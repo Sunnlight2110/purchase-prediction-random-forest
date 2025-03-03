@@ -8,7 +8,7 @@ import os
 import joblib
 
 
-class ModelTrainer:
+class RandomForestPurchasePredictorModel:
     def __init__(self, n_estimators=300, max_depth=5, random_state=69):
         self.n_estimators = n_estimators
         self.max_depth = max_depth

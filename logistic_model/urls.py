@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ModelView
+from .views import PurchasePredictionAPI
 
 urlpatterns = [
-    path('purchase-predictor/', ModelView.as_view(), name='purchase_prediction_operations'),
+    path('purchase-predictor/', PurchasePredictionAPI.as_view(), name='purchase_prediction_operations'),
 ]

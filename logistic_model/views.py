@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .model_training import ModelTrainer
+from .model_training import RandomForestPurchasePredictorModel
 import pandas as pd
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -7,10 +7,10 @@ from rest_framework import status
 import os
 from django.conf import settings
 
-class ModelView(APIView):
+class PurchasePredictionAPI(APIView):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.model_trainer = ModelTrainer()
+        self.model_trainer = RandomForestPurchasePredictorModel()
         self.model_path = os.path.join(settings.BASE_DIR, 'saved_models')
     
     def post(self, request):
