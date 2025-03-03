@@ -28,16 +28,6 @@ python train.py
 Evaluate the model:
 sh
 python evaluate.py
-Generate visualizations:
-sh
-python visualize.py
-Results
-Accuracy: [Insert accuracy score]
-Confusion Matrix: [Include confusion matrix image or description]
-ROC-AUC Score: [Insert ROC-AUC score]
-Feature Importance: [Include feature importance graph]
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 License
 This project is licensed under the MIT License.
